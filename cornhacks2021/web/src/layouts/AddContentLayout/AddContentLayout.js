@@ -1,7 +1,7 @@
-import AddUpdate from 'src/components/AddUpdate'
+import AddPost from 'src/components/AddPost'
 
 const AddContentLayout = ({ children }) => {
-  return <AddUpdate></AddUpdate>
+  return <AddPost></AddPost>
 }
 
 export default AddContentLayout

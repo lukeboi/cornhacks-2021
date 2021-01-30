@@ -1,11 +1,11 @@
 import { render } from '@redwoodjs/testing'
 
-import AddUpdate from './AddUpdate'
+import AddPost from './AddPost'
 
-describe('AddUpdate', () => {
+describe('AddPost', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<AddUpdate />)
+      render(<AddPost />)
     }).not.toThrow()
   })
 })
