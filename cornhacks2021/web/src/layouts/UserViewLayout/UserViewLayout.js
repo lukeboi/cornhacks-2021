@@ -2,11 +2,11 @@ const UserViewLayout = ({ children }) => {
   return (
     <>
       <header>
-        <h1>Navbar</h1>
-        <div class="box-border h-32 w-32 p-4 border-4 ...">
-</div>
-        <nav>
-        </nav>
+      <nav class="bg-yellow-200 py-4 px-4">
+        <div class="mb-2 sm:mb-0">
+          <p class="text-2xl no-underline text-grey-darkest hover:text-blue-dark">🚀 Rokkit</p>
+        </div>
+      </nav>
       </header>
       <main>{children}</main>
     </>
