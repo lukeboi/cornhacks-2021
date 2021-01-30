@@ -1,5 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
-import { Navabr } from 'src/components/Navbar'
+// import { Navabr } from 'src/components/Navbar'
 import UserViewLayout from 'src/layouts/UserViewLayout/UserViewLayout'
 
 const HomePage = () => {
