@@ -1,5 +1,5 @@
 const AddContentLayout = ({ children }) => {
-  return <>{children}</>
+  return <AddUpdate></AddUpdate>
 }
 
 export default AddContentLayout
