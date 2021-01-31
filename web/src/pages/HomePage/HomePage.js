@@ -5,7 +5,12 @@ import AddContentLayout from 'src/layouts/AddContentLayout/AddContentLayout';
 import TimelineLayout from 'src/layouts/TimelineLayout/TimelineLayout';
 
 const HomePage = () => {
-  return <TimelineLayout></TimelineLayout>
+  return (
+    <>
+    <AddContentLayout></AddContentLayout>
+    <TimelineLayout></TimelineLayout>
+    </>
+  )
 }
 
 export default HomePage
