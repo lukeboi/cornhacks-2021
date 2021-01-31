@@ -40,6 +40,7 @@ ReactDOM.render(
   <FatalErrorBoundary page={FatalErrorPage}>
     <AuthProvider client={netlifyIdentity} type="netlify">
       <RedwoodProvider>
+
         <Routes />
       </RedwoodProvider>
     </AuthProvider>
