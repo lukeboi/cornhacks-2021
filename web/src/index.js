@@ -25,7 +25,7 @@ const UserAuthTools = () => {
           await logOut()
           navigate('/')
         } else {
-          await logIn()
+          await logIn('/profile')
         }
       }}
     >
