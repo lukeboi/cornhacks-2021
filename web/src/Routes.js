@@ -7,12 +7,12 @@
 // 'src/pages/HomePage/HomePage.js'         -> HomePage
 // 'src/pages/Admin/BooksPage/BooksPage.js' -> AdminBooksPage
 
-import { Router, Route } from '@redwoodjs/router'
+import { Router, Route, Private } from '@redwoodjs/router'
 
 const Routes = () => {
   return (
     <Router>
-      <Route path="/posts/new" page={NewPostPage} name="newPost" />
+      {/* <Route path="/posts/new" page={NewPostPage} name="newPost" />
       <Route path="/posts/{id:Int}/edit" page={EditPostPage} name="editPost" />
       <Route path="/posts/{id:Int}" page={PostPage} name="post" />
       <Route path="/posts" page={PostsPage} name="posts" />
@@ -23,10 +23,16 @@ const Routes = () => {
       <Route path="/users/new" page={NewUserPage} name="newUser" />
       <Route path="/users/{id:Int}/edit" page={EditUserPage} name="editUser" />
       <Route path="/users/{id:Int}" page={UserPage} name="user" />
-      <Route path="/users" page={UsersPage} name="users" />
-      <Route path="/profile" page={ProfilePage} name="profile" />
-      <Route path="/" page={HomePage} name="home" />
+      <Route path="/users" page={UsersPage} name="users" /> */}
+      <Route path="/login" page={LoginPage} name="login" />
+
+      <Private unauthenticated="login">
+        <Route path="/" page={HomePage} name="home" />
+        <Route path="/profile" page={ProfilePage} name="profile" />
+      </Private>
+
       <Route notfound page={NotFoundPage} />
+
     </Router>
   )
 }
