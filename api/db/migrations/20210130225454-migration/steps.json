@@ -1,0 +1,19 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "CreateField",
+      "model": "Post",
+      "field": "project",
+      "type": "Project",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Project",
+      "field": "owner",
+      "type": "User",
+      "arity": "Required"
+    }
+  ]
+}
