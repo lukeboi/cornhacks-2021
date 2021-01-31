@@ -1,6 +1,6 @@
 export const QUERY = gql`
-  query {
-    user(id:9){
+  query ($id: Int!){
+    user(id:$id){
       projects{
         id
         name

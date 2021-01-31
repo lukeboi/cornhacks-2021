@@ -8,7 +8,7 @@ const UserProjectListLayout = ({ userId }) => {
         <UserInfoHomePageCell id={parseInt(userId)} />
       </div>
       <div className="row-start-3 row-end-6 col-start-1 col-end-4 overflow-y-auto">
-        <UserProjectsCell/>
+        <UserProjectsCell id={parseInt(userId)}/>
       </div>
       <div className="row-start-6 row-end-7 col-start-3 col-end-4">
         <form>
