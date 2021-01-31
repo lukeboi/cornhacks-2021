@@ -34,23 +34,23 @@ async function main() {
     new_projects.push(
       await db.project.create({
         data: {
-          name: name+"'s project",
+          name: name+"'s guitar project",
           user: {
             create: {
-              email: name+'@gmail.com',
+              email: name+'farritor@gmail.com',
               name: name
             }
           },
           posts: {
             create: [
               {
-                bodyText: name+"'s project body text 1",
+                bodyText: "I added some improved styling to my personal website. Changed some header colors and also adjusted padding on my about page!",
               },
               {
-                bodyText: name+"'s project body text 2"
+                bodyText: name+"Today, I tried out a new web framework called RedwoodJS. Has a lot of potential, but still very immature."
               },
               {
-                bodyText: name+"'s project body text 3"
+                bodyText: name+"Made some progress on an early startup idea."
               }
             ],
           }

@@ -12,7 +12,7 @@ const UserViewLayout = ({ children }) => {
           </div>
           <ul class="flex flex-row text-xl ">
 
-            <li class="pr-5">
+            {/* <li class="pr-5">
               <button
                 class="
                   font-semibold
@@ -21,7 +21,7 @@ const UserViewLayout = ({ children }) => {
                   border-yellow-200
                   transition duration-300 ease-in-out
                   hover:border-yellow-50">Feed</button>
-            </li>
+            </li> */}
             <li class="pr-5">
               <button
                 class="
