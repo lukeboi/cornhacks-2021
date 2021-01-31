@@ -49,12 +49,12 @@ export const Empty = () => {
 
 export const Failure = ({ error }) => <div>Error: {error.message}</div>
 
-export const Success = ({ userInfoHomePage }) => {
-  return userInfoHomePage.map((user) => 
+export const Success = ({ user }) => {
+  return (user) =>
     <div class="bg-white shadow overflow-hidden sm:rounded-lg">
       <div class="px-4 py-5 sm:px-6">
         <h3 class="text-lg leading-6 font-medium text-gray-900">
-          {userInfo.name}
+          {user.name}
         </h3>
       </div>
       <div class="border-t border-gray-200">
@@ -64,11 +64,10 @@ export const Success = ({ userInfoHomePage }) => {
               Email
             </dt>
             <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-              {userInfo.email}
+              {user.email}
             </dd>
           </div>
         </dl>
       </div>
     </div>
-  )
 }
