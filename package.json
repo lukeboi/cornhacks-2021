@@ -16,8 +16,5 @@
     "node": ">=12",
     "yarn": ">=1.15"
   },
-  "dependencies": {
-    "tailwindcss": "^2.0.2",
-    "yarn": "^1.22.10"
-  }
+  "dependencies": {}
 }

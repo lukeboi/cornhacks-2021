@@ -1,8 +1,18 @@
 import { Link, routes } from '@redwoodjs/router'
-import AddContentLayout from 'src/layouts/AddContentLayout/AddContentLayout';
 
 const ProfilePage = () => {
-  return <AddContentLayout></AddContentLayout>
+  return (
+    <>
+      <h1>ProfilePage</h1>
+      <p>
+        Find me in <code>./web/src/pages/ProfilePage/ProfilePage.js</code>
+      </p>
+      <p>
+        My default route is named <code>profile</code>, link to me with `
+        <Link to={routes.profile()}>Profile</Link>`
+      </p>
+    </>
+  )
 }
 
 export default ProfilePage
