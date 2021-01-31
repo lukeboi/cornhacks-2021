@@ -19,8 +19,6 @@ const Routes = () => {
         <Route path="/profile/{id}" page={ProfilePage} name="profile" />
       </Private>
 
-      <Route path="/profile/{id}" page={ProfilePage} name="profile" />
-      <Route path="/" page={HomePage} name="home" />
       <Route notfound page={NotFoundPage} />
 
     </Router>
