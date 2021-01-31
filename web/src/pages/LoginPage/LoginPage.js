@@ -12,25 +12,28 @@ const LoginPage = () => {
 
   return (
     <div className="bg-yellow-200 flex h-screen border-black border-1 container">
-      <div className="m-auto space-y-10 items-center justify-center">
+      <div className="m-auto space-y-5 items-center justify-center">
         <h1 className="text-8xl text-center">🚀</h1>
         <h1 className="text-6xl text-center font-bold">Welcome To Rokkit</h1>
-        <button
-          onClick={logIn}
-          className="
-            font-semibold
-            px-3 py-1
-            bg-yellow-300
-            transition duration-300 ease-in-out
-            text-3xl
-            shadow-sm
-          ">
-            Log In
-          </button>
-      </div>
-      <div className="position-absolute top-0 bottom-0 left-0 right-0">
-        {/* {isAuthenticated && <p>Logged in as {currentUser.email}</p>}
-        {!isAuthenticated && <p>Logged out</p>} */}
+        <h2 className="text-2xl text-center font-semibold">A place to do stuff</h2>
+        <div className="flex justify-evenly mt-10">
+          {/* <div>test</div> */}
+          <div>
+            <button
+              onClick={logIn}
+              className="
+                font-semibold
+                px-3 py-1
+                bg-yellow-300
+                transition duration-300 ease-in-out
+                text-4xl
+                shadow
+                rounded-lg
+                shadow-md">
+              Get Started
+            </button>
+          </div>
+        </div>
 
       </div>
 
