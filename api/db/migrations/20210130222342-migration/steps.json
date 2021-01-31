@@ -1,0 +1,24 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "DeleteModel",
+      "model": "Project"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Post",
+      "field": "project"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Post",
+      "field": "projectId"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "User",
+      "field": "projects"
+    }
+  ]
+}
