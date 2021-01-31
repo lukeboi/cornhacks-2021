@@ -54,6 +54,25 @@ export const Empty = () => {
 
 export const Failure = ({ error }) => <div>Error: {error.message}</div>
 
+function getTimeDifferenceMessage(time){
+  var difference = (new Date()).getTime() - time
+  difference /= 1000;
+  if(difference < 60){
+    difference = Math.round(difference);
+    return 'Created '+difference+' second'+(difference === 1 ? '' : 's')+' ago';
+  }
+  difference = Math.floor(difference / 60)
+  if(difference < 60){
+    return 'Created '+difference+' minute'+(difference === 1 ? '' : 's')+' ago';
+  }
+  difference = Math.floor(difference / 60)
+  if(difference < 24){
+    return 'Created '+difference+' hour'+(difference === 1 ? '' : 's')+' ago';
+  }
+  difference = Math.floor(difference / 24)
+  return 'Created '+difference+' day'+(difference === 1 ? '' : 's')+' ago';
+}
+
 export const Success = ({ posts }) => {
   console.log({posts});
   return posts.map(post =>
@@ -64,7 +83,7 @@ export const Success = ({ posts }) => {
             {post.name}
           </h3>
           <p className="mt-1 max-w-2xl text-sm text-gray-500">
-            {post.createdAt}
+            {getTimeDifferenceMessage(new Date(post.createdAt))}
           </p>
         </div>
         <div className="border-t border-gray-200">
