@@ -16,10 +16,10 @@ const Routes = () => {
 
       <Private unauthenticated="login">
         <Route path="/" page={HomePage} name="home" />
-        <Route path="/profile" page={ProfilePage} name="profile" />
+        <Route path="/profile/{id}" page={ProfilePage} name="profile" />
       </Private>
 
-      <Route path="/profile" page={ProfilePage} name="profile" />
+      <Route path="/profile/{id}" page={ProfilePage} name="profile" />
       <Route path="/" page={HomePage} name="home" />
       <Route notfound page={NotFoundPage} />
 
