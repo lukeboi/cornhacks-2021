@@ -1,16 +1,26 @@
 import { Link, routes } from '@redwoodjs/router'
+import AddContentLayout from 'web/src/layouts/AddContentLayout/AddContentLayout'
+import TimelineLayout from 'web/src/layouts/TimelineLayout/TimelineLayout'
+import UserProjectListLayout from 'web/src/layouts/UserProjectListLayout/UserProjectListLayout'
+import UserViewLayout from 'src/layouts/UserViewLayout/UserViewLayout'
 
-const ProfilePage = () => {
+
+const ProfilePage = ({ id }) => {
   return (
     <>
-      <h1>ProfilePage</h1>
-      <p>
-        Find me in <code>./web/src/pages/ProfilePage/ProfilePage.js</code>
-      </p>
-      <p>
-        My default route is named <code>profile</code>, link to me with `
-        <Link to={routes.profile()}>Profile</Link>`
-      </p>
+      <UserViewLayout>
+        <div class="grid grid-cols-5 grid-rows-3 justify-items-auto mt-3">
+          <div class="col-start-3 col-end-5 row-start-1 ow-end-2">
+            <AddContentLayout/>
+          </div>
+          <div class="col-start-3 col-end-5 row-start-2 ow-end-4">
+            <TimelineLayout/>
+          </div>
+          <div class="col-start-1 col-end-3">
+            <UserProjectListLayout userId={id}/>
+          </div>
+        </div>
+      </UserViewLayout>
     </>
   )
 }
